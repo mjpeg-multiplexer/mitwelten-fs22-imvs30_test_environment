@@ -1,0 +1,8 @@
+2022/07/22 10:30:36 multiplexer.go:21: Running the MJPEG-multiFLEXer
+2022/07/22 10:30:36 aggregator.go:57: Passthorugh-Mode not active - Each frame will be decoded and encoded, which may be slow.
+=> Activate it by either using the 'carousel' mode or by only using one input source and by removing the width, height, quality and show_label options.
+2022/07/22 10:30:37 outputHTTP.go:165: 127.0.0.1:36636 connected
+2022/07/22 10:30:37 outputHTTP.go:173: Client connected, starting aggregator
+2022/07/22 10:30:37 aggregator.go:94: 1 FPS
+2022/07/22 10:30:48 input.go:64: Could not read from socket localhost:8080: EOF
+2022/07/22 10:30:48 input.go:31: Could not reconnect to localhost:8080
