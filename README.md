@@ -6,6 +6,7 @@
 # Running test streams
 
 - run `start_streams.sh`
+- stop all streams with `stop_streams.sh`
 
 # Running the benchmarks
 - (replace the 'multiplexer' binary if needed)
