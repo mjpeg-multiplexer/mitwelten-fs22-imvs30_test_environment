@@ -37,11 +37,11 @@ for size in ${sizes[@]}; do
   echo ""
   # ohne
   echo "ohne passthrough"
-  run "./multiplexer carousel input localhost:8080,localhost:8081,localhost:8082,localhost:8083 output 8088 --log_fps --cycle --disable_passthrough" "0"
+  run "./multiplexer carousel input localhost:8080,localhost:8081,localhost:8082,localhost:8083 output 8088 --log_fps  --disable_passthrough" "0"
 
   # mit
   echo "mit passthrough"
-  run "./multiplexer carousel input localhost:8080,localhost:8081,localhost:8082,localhost:8083 output 8088 --log_fps --cycle" "1"
+  run "./multiplexer carousel input localhost:8080,localhost:8081,localhost:8082,localhost:8083 output 8088 --log_fps"  "1"
 
   ./stop_streams.sh
 done

@@ -37,11 +37,11 @@ for size in ${sizes[@]}; do
   echo ""
   # ohne
   echo "ohne motion"
-  run "./multiplexer panel input localhost:8080,localhost:8081,localhost:8082,localhost:8083 output 8088 --log_fps --quality 80 --cycle" "0"
+  run "./multiplexer panel input localhost:8080,localhost:8081,localhost:8082,localhost:8083 output 8088 --log_fps --quality 80 --panel_cycle" "0"
 
   # mit
   echo "mit motion"
-  run "./multiplexer panel input localhost:8080,localhost:8081,localhost:8082,localhost:8083 output 8088 --log_fps --quality 80 --cycle --motion" "1"
+  run "./multiplexer panel input localhost:8080,localhost:8081,localhost:8082,localhost:8083 output 8088 --log_fps --quality 80 --panel_cycle --activity" "1"
 
   ./stop_streams.sh
 done
